@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-mineral-50: #fafafa;
+  --color-mineral-100: #f4f4f5;
+  --color-mineral-200: #e4e4e7;
+  --color-mineral-300: #d4d4d8;
+  --color-mineral-800: #27272a;
+  --color-mineral-900: #18181b;
+  --color-terra-600: #9c6644;
+}
+
+@layer base {
+  a:focus-visible, button:focus-visible, [role="button"]:focus-visible, [tabindex="0"]:focus-visible {
+    outline: 2px solid var(--color-mineral-900);
+    outline-offset: 2px;
+  }
+}
