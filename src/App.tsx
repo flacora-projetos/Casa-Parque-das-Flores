@@ -16,6 +16,7 @@ import { Localizacao } from './components/Localizacao';
 import { CTAFinal } from './components/CTAFinal';
 import { CTAMobileFixo } from './components/CTAMobileFixo';
 import { Footer } from './components/Footer';
+import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 
 export default function App() {
   return (
@@ -55,6 +56,9 @@ export default function App() {
 
       {/* Fixed CTA for Mobile */}
       <CTAMobileFixo />
+
+      {/* Floating WhatsApp Button */}
+      <FloatingWhatsApp />
     </main>
   );
 }
