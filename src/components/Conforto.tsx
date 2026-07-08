@@ -1,8 +1,8 @@
 import { imageMap } from '../data/images';
 
 export function Conforto() {
-  const mainImage = imageMap.find(img => img.src === '/images/quarto.jpg');
-  const supportImage = imageMap.find(img => img.src === '/images/banheiro-principal.jpg');
+  const mainImage = imageMap.find(img => img.id === 'quarto');
+  const supportImage = imageMap.find(img => img.id === 'banheiro-principal');
 
   return (
     <section id="conforto" className="w-full py-20 md:py-32 bg-white">

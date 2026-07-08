@@ -1,8 +1,8 @@
 import { imageMap } from '../data/images';
 
 export function AmbientesIntegrados() {
-  const mainImage = imageMap.find(img => img.src === '/images/sala-integrada.jpg');
-  const secImage = imageMap.find(img => img.src === '/images/sala-amplitude.jpg');
+  const mainImage = imageMap.find(img => img.id === 'sala-integrada');
+  const secImage = imageMap.find(img => img.id === 'sala-amplitude');
 
   return (
     <section id="ambientes-integrados" className="w-full py-20 md:py-32 bg-white">

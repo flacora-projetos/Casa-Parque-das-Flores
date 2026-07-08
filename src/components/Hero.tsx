@@ -9,9 +9,10 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img 
-          src="/images/frente-1.jpg" 
+          src="https://iili.io/ClUoOlV.jpg" 
           alt="Fachada e área externa da casa no Parque das Flores, em Goiânia." 
-          className="w-full h-full object-cover object-center md:scale-[1.25] md:translate-x-[12.5%]"
+          className="w-full h-full object-cover"
+          style={{ objectPosition: '75% center' }}
         />
         {/* Dark Gradient Overlay */}
         <div className="absolute inset-0 bg-hero-overlay-mobile md:bg-hero-overlay-desktop pointer-events-none"></div>

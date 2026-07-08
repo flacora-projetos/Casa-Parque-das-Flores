@@ -1,8 +1,8 @@
 import { imageMap } from '../data/images';
 
 export function AreaGourmet() {
-  const mainImage = imageMap.find(img => img.src === '/images/area-gourmet.jpg');
-  const supportImage = imageMap.find(img => img.src === '/images/frente-2.jpg');
+  const mainImage = imageMap.find(img => img.id === 'area-gourmet');
+  const supportImage = imageMap.find(img => img.id === 'frente-2');
 
   return (
     <section id="area-gourmet" className="w-full py-20 md:py-32 bg-mineral-50">

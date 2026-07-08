@@ -3,7 +3,7 @@ import { propertyData } from '../data/property';
 import { getWhatsAppLink } from '../utils/whatsapp';
 
 export function CTAFinal() {
-  const bgImage = imageMap.find(img => img.src === '/images/frente-2.jpg');
+  const bgImage = imageMap.find(img => img.id === 'frente-2');
   const whatsappUrl = getWhatsAppLink('visit');
 
   return (

@@ -1,8 +1,8 @@
 import { imageMap } from '../data/images';
 
 export function Acabamento() {
-  const img1 = imageMap.find(img => img.src === '/images/banheiro-principal.jpg');
-  const img2 = imageMap.find(img => img.src === '/images/banheiro-2.jpg');
+  const img1 = imageMap.find(img => img.id === 'banheiro-principal');
+  const img2 = imageMap.find(img => img.id === 'banheiro-2');
 
   return (
     <section id="acabamento" className="w-full py-20 md:py-32 bg-mineral-900 text-mineral-50">
