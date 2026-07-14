@@ -7,11 +7,10 @@ const WHATSAPP_MESSAGES: Record<WhatsAppIntent, string> = {
 };
 
 export function getWhatsAppLink(intent: WhatsAppIntent): string {
-  const number = import.meta.env.VITE_WHATSAPP_NUMBER;
+  let number = import.meta.env.VITE_WHATSAPP_NUMBER;
   
   if (!number || number.includes('X')) {
-    // Retorna vazio ou link neutro caso o número não tenha sido configurado.
-    return '#'; 
+    number = '556294575133';
   }
 
   const message = encodeURIComponent(WHATSAPP_MESSAGES[intent]);
